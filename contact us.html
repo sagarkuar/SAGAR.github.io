@@ -1,110 +1,34 @@
+<!DOCTYPE html>
 <html>
-<style>
-*{
-  margin: 0;
-  padding: 6px;;
-
-   }
-div{
-    width: 100vw;
-    height: 5vh;
-    background: aqua;
-    position: absolute;
-    margin-top: 1px;
-    text-decoration: none;
-    }
-ul{
-   list-style: none;
-   display: inline-flex;
-   float: left;
-   margin-top: 1px;
-    
- }
-img{ height:1000;
-     width:1000;
-    
-    
-    }
-h3{
-   font-size: 75px;
-   color: #FF0001;
-   }
- body{
-  background-image: url("magic black hole.jpg");
- background-size: cover;
- background-position: center;
-  height:100vh;
-  width:100vw;
-  
- 
-     }
-
-form{
-    font-size:50px;
-     }
-input{
-       font-size: 30px;
-       }
- li{
-    font-size: 30px;
-    }
-a:hover{
-color: yellow;            
-   }
-lable{
-  color: aqua;
-  }
-p{
-  color: aqua;
-  }
-</style>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 <body>
-<div>
-     <nav>
-     <ul>
-          <li><a href ="my first webpage.html">home</a></li>
-           <li><a href ="about me.html">about me</a></li>   
-       </ul>
-      </nav>     
-</div> <br><br><br><br><br><br><br><br>
-   <br><br> <br><br>
-<center>
-
-
- <h3><u>CONTACT FORM</u></h3>
-<form>
-      <lable>USERNAME</lable><br>
-      <input type="text" name="username"><br><br>
-      <lable>email id</lable><br>
-      <input type="text" name="email id"><br><br>
-     <lable>pasword</lable><br>
-      <input type="pasword"       name="pasword" placeholder="enter your pasword"><br><br>
-      <lable>mobile no.</lable><br>
-      <input type="number"       name="mobile no."><br><br>
-      <textarea 
-      cols="100" rows="8"> 
-      </textarea><br><br>
-      <p><u>SELECT YOUR GENDER</u></P>
-    <input type ="radio" name ="gender">MALE
-     <input type ="radio" name ="gender">FEMALE<br><br>
-     <br><input type ="submit" name ="submit"><br><br><br>
-</form> </center>   
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <form class="p-2">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Mobile no.</label>
+      <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your number">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-4 col-12">Submit</button>
+  </form>
 </body>
 </html>
